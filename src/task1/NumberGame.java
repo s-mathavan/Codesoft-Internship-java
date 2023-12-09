@@ -4,6 +4,7 @@ public class NumberGame {
     public static void main(String args[]){
 
         startGame();
+
     }
     private static void startGame(){
         int minRange=1,maxRange=100;
@@ -34,7 +35,7 @@ public class NumberGame {
             }
         }
         if(numberOfAttempt<=0) System.out.println("there is no attempt left");
-        System.out.println("The generated number was"+randomNumber);
+        System.out.println("The generated number was "+randomNumber);
         sc.close();
     }
 }
