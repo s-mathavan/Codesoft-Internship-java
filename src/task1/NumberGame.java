@@ -7,7 +7,7 @@ public class NumberGame {
         Scanner sc=new Scanner(System.in);
         while(true){
             print.print();
-            System.out.println("Press 1 and enter key to play\t\t\t\t\tPress anyother key and press enter to exit");
+            System.out.println("Press 1 and enter key to play\t\t\t\t\tPress 2 and press enter to exit");
             int n= sc.nextInt();
             if(n==1){
                 startGame();
@@ -39,14 +39,10 @@ public class NumberGame {
             else if(userVal>randomNumber) {
                 print.print();
                 System.out.println("No.of Attempts left:"+ --numberOfAttempt+"\t\t\t\tHINT:your value is higher than my number,Try again!");
-
-
             }
             else if(userVal<randomNumber) {
                 print.print();
                 System.out.println("No.of Attempts left:"+ --numberOfAttempt+"\t\t\t\tHINT:your value is lower than my number,Try again!");
-
-
             }
         }
         if(numberOfAttempt<=0){
@@ -54,5 +50,7 @@ public class NumberGame {
             System.out.println("\t\t\tthere is no attempts left");
         }
         System.out.println("\n\t\t\tThe generated number was "+randomNumber);
+        System.out.println("\t\t\t\t\tpress any key and enter to continue");
+        sc.next();
     }
 }
