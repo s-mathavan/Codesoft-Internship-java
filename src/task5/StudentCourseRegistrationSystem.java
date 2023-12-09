@@ -1,4 +1,4 @@
-package task4;
+package task5;
 
 public class StudentCourseRegistrationSystem {
 }

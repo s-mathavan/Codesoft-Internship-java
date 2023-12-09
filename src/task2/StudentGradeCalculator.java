@@ -1,4 +1,4 @@
-package task5;
+package task2;
 
 public class StudentGradeCalculator {
 }

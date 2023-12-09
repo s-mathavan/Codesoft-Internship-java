@@ -1,4 +1,4 @@
-package task1;
+package task3;
 
 public class ATMinterface {
 }
