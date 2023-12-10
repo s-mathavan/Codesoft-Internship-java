@@ -7,7 +7,7 @@ public class NumberGame {
         Scanner sc=new Scanner(System.in);
         while(true){
             print.print();
-            System.out.println("Press 1 and enter key to play\t\t\t\t\tPress anyother number and press enter to exit");
+            System.out.println("Press 1 and enter key to play\t\t\t\tPress anyother number and press enter to exit");
             int n= sc.nextInt();
             if(n==1){
                 startGame();
