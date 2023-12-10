@@ -1,13 +1,13 @@
 package task1;
 import java.util.Scanner;
 public class NumberGame {
-
+    static Print print=new Print();
     public static void main(String args[]){
-        Print print=new Print();
+
         Scanner sc=new Scanner(System.in);
         while(true){
             print.print();
-            System.out.println("Press 1 and enter key to play\t\t\t\t\tPress 2 and press enter to exit");
+            System.out.println("Press 1 and enter key to play\t\t\t\t\tPress anyother number and press enter to exit");
             int n= sc.nextInt();
             if(n==1){
                 startGame();
@@ -23,7 +23,7 @@ public class NumberGame {
 
         Scanner sc=new Scanner(System.in);
 
-        Print print=new Print();
+
         print.print();
         System.out.println("No.of Attempts left:3");
 

@@ -10,5 +10,4 @@ public class Print {
         System.out.println("I have generated a random number between 1 and 100. Can you guess what it is?\n");
         System.out.println("******************************************************************************************");
     }
-
 }
