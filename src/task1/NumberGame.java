@@ -7,7 +7,7 @@ public class NumberGame {
         Scanner sc=new Scanner(System.in);
         while(true){
             print.print();
-            System.out.println("Press 1 and enter key to play\t\t\t\tPress anyother number and press enter to exit");
+            System.out.println("Press 1 and enter key to play\t\t\tPress anyother number and press enter to exit");
             int n= sc.nextInt();
             if(n==1){
                 startGame();
@@ -18,14 +18,13 @@ public class NumberGame {
     }
     private static void startGame(){
         int minRange=1,maxRange=100;
-        int numberOfAttempt=3;
+        int numberOfAttempt=10;
         int randomNumber=(int)(Math.random()*(maxRange-minRange+1)+minRange);
 
         Scanner sc=new Scanner(System.in);
 
-
         print.print();
-        System.out.println("No.of Attempts left:3");
+        System.out.println("No.of Attempts left:"+numberOfAttempt);
 
         while(numberOfAttempt>0){
             System.out.println();
@@ -49,7 +48,8 @@ public class NumberGame {
             print.print();
             System.out.println("\t\t\tthere is no attempts left");
         }
-        System.out.println("\n\t\t\tThe generated number was "+randomNumber);
+        System.out.println("\n\t\t\t\t\t\tThe generated number was "+randomNumber);
+        System.out.println("\t\t\t\t\t\t\tYOUR SCORE WAS: "+numberOfAttempt*10);
         System.out.println("\t\t\t\t\tpress any key and enter to continue");
         sc.next();
     }
