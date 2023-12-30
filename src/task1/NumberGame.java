@@ -7,7 +7,7 @@ public class NumberGame {
         Scanner sc=new Scanner(System.in);
         while(true){
             print.print();
-            System.out.println("Press 1 and enter key to play\t\t\tPress anyother number and press enter to exit");
+            System.out.println("\nPress 1 and enter key to play\t\tPress anyother number and press enter to exit");
             int n= sc.nextInt();
             if(n==1){
                 startGame();
@@ -32,25 +32,25 @@ public class NumberGame {
 
             if(userVal==randomNumber) {
                 print.print();
-                System.out.println("Congratulations! Your guess is correct!");
+                System.out.println("\t\t\tCongratulations! Your guess is correct!");
                 break;
             }
             else if(userVal>randomNumber) {
                 print.print();
-                System.out.println("No.of Attempts left:"+ --numberOfAttempt+"\t\t\t\tHINT:your value is higher than my number,Try again!");
+                System.out.println("No.of Attempts left:"+ --numberOfAttempt+"\t\t\tHINT:your value is higher than my number,Try again!");
             }
             else if(userVal<randomNumber) {
                 print.print();
-                System.out.println("No.of Attempts left:"+ --numberOfAttempt+"\t\t\t\tHINT:your value is lower than my number,Try again!");
+                System.out.println("No.of Attempts left:"+ --numberOfAttempt+"\t\t\tHINT:your value is lower than my number,Try again!");
             }
         }
         if(numberOfAttempt<=0){
             print.print();
             System.out.println("\t\t\tthere is no attempts left");
         }
-        System.out.println("\n\t\t\t\t\t\tThe generated number was "+randomNumber);
-        System.out.println("\t\t\t\t\t\t\tYOUR SCORE WAS: "+numberOfAttempt*10);
-        System.out.println("\t\t\t\t\tpress any key and enter to continue");
+        System.out.println("\n\t\t\tThe generated number was "+randomNumber);
+        System.out.println("\t\t\t\tYOUR SCORE WAS: "+numberOfAttempt*10);
+        System.out.println("\t\t\tpress any key and enter to continue");
         sc.next();
     }
 }

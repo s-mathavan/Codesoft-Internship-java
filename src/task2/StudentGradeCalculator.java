@@ -17,11 +17,13 @@ public class StudentGradeCalculator {
             avg+=sc.nextInt();
         }
         avg/=n;
-        if(avg>=90) System.out.println("Your Grade: A");
-        else if (avg>=80) System.out.println("Your Grade: B");
-        else if (avg>=60) System.out.println("Your Grade: C");
-        else if (avg>=40) System.out.println("Your Grade: D");
-        else if (avg>=30) System.out.println("Your Grade: E");
-        else System.out.println("Your Grade: F");
+        print.print();
+        System.out.print("\t\t\t\t");
+        if(avg>=90) System.out.println("Your Grade: A!!");
+        else if (avg>=80) System.out.println("Your Grade: B!!");
+        else if (avg>=60) System.out.println("Your Grade: C!!");
+        else if (avg>=40) System.out.println("Your Grade: D!!");
+        else if (avg>=30) System.out.println("Your Grade: E!!");
+        else System.out.println("Your Grade: F!!");
     }
 }
