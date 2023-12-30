@@ -46,11 +46,11 @@ public class NumberGame {
         }
         if(numberOfAttempt<=0){
             print.print();
-            System.out.println("\t\t\tthere is no attempts left");
+            System.out.println("\t\t\t   there is no attempts left");
         }
-        System.out.println("\n\t\t\tThe generated number was "+randomNumber);
+        System.out.println("\n\t\t\t   The generated number was "+randomNumber);
         System.out.println("\t\t\t\tYOUR SCORE WAS: "+numberOfAttempt*10);
-        System.out.println("\t\t\tpress any key and enter to continue");
+        System.out.println("\t\t\t  press any key and enter to continue");
         sc.next();
     }
 }
